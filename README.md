@@ -11,6 +11,8 @@ A proposta deste repositório é registrar uma implementação simples, porém o
 
 ---
 
+![Robot Tests](https://github.com/SEU-USUARIO/bugbank-test-automation/actions/workflows/robot.yml/badge.svg)
+
 ## Objetivo
 
 Este projeto foi criado para praticar e demonstrar conhecimentos em:
