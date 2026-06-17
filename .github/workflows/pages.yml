@@ -1,0 +1,30 @@
+name: Publish Robot Reports
+
+on:
+  workflow_run:
+    workflows: ["Robot Framework Tests"]
+    types:
+      - completed
+
+permissions:
+  pages: write
+  id-token: write
+  contents: read
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload Report
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: reports
+
+      - name: Deploy
+        uses: actions/deploy-pages@v4

@@ -6,6 +6,12 @@
 ![CI](https://github.com/ReginaldDev/robotframework-playwright-bugbank/actions/workflows/robot.yml/badge.svg)
 ![Status](https://img.shields.io/badge/Status-Completed-success)
 
+## Relatório da Última Execução
+
+📊 GitHub Pages:
+https://reginalddev.github.io/robotframework-playwright-bugbank/
+
+
 Projeto desenvolvido para consolidar e demonstrar conhecimentos em **Automação de Testes Web** utilizando **Robot Framework**, **Browser Library (Playwright)** e práticas modernas de organização de testes automatizados.
 
 O objetivo deste repositório é servir como portfólio técnico, registrando a implementação de cenários automatizados em uma aplicação amplamente utilizada pela comunidade de QA para estudos e prática de automação: o **BugBank**.
