@@ -2,7 +2,7 @@
 
 ![Python](https://img.shields.io/badge/Python-3.10%2B-blue)
 ![Robot Framework](https://img.shields.io/badge/Robot%20Framework-Automation-orange)
-![Playwright](https://img.shields.io/badge/Playwright-Browser-green)
+![Playwright](https://img.shields.io/badge/Playwright-green)
 ![CI](https://github.com/ReginaldDev/robotframework-playwright-bugbank/actions/workflows/robot.yml/badge.svg)
 ![Status](https://img.shields.io/badge/Status-Completed-success)
 
