@@ -1,0 +1,15 @@
+__pycache__/
+
+.venv/
+venv/
+
+results/
+
+log.html
+report.html
+output.xml
+
+node_modules/
+
+.idea/
+.vscode/
