@@ -1,9 +1,9 @@
 # BugBank — Automação de Testes com Robot Framework
 
-![Python](https://img.shields.io/badge/Python-3.10+-blue)
-![Robot Framework](https://img.shields.io/badge/Robot_Framework-Automation-orange)
+![Python](https://img.shields.io/badge/Python-3.10%2B-blue)
+![Robot Framework](https://img.shields.io/badge/Robot%20Framework-Automation-orange)
 ![Playwright](https://img.shields.io/badge/Playwright-Browser-green)
-![CI](https://img.shields.io/github/actions/workflow/status/ReginaldDev/robotframework-playwright-bugbank/robot.yml)
+![CI](https://github.com/ReginaldDev/robotframework-playwright-bugbank/actions/workflows/robot.yml/badge.svg)
 ![Status](https://img.shields.io/badge/Status-Completed-success)
 
 Projeto desenvolvido para consolidar e demonstrar conhecimentos em **Automação de Testes Web** utilizando **Robot Framework**, **Browser Library (Playwright)** e práticas modernas de organização de testes automatizados.
