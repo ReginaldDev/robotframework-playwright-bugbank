@@ -8,8 +8,8 @@
 
 ## Relatório da Última Execução
 
-📊 Report da última execução:
-| Report | https://reginalddev.github.io/robotframework-playwright-bugbank/report.html |
+📊 Report da última execução<br>
+| Report | https://reginalddev.github.io/robotframework-playwright-bugbank/report.html |<br>
 | Log | https://reginalddev.github.io/robotframework-playwright-bugbank/log.html |
 
 
