@@ -8,8 +8,9 @@
 
 ## Relatório da Última Execução
 
-📊 GitHub Pages:
-https://reginalddev.github.io/robotframework-playwright-bugbank/
+📊 Report da última execução:
+| Report | https://reginalddev.github.io/robotframework-playwright-bugbank/report.html |
+| Log | https://reginalddev.github.io/robotframework-playwright-bugbank/log.html |
 
 
 Projeto desenvolvido para consolidar e demonstrar conhecimentos em **Automação de Testes Web** utilizando **Robot Framework**, **Browser Library (Playwright)** e práticas modernas de organização de testes automatizados.
