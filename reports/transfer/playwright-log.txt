@@ -1,0 +1,157 @@
+{"level":"info","time":"2026-06-15T02:27:58.448Z","seq":1,"component":"browser-library","msg":"Listening on 127.0.0.1:63829"}
+{"level":"info","time":"2026-06-15T02:27:58.908Z","seq":2,"component":"browser-library","event_kind":"grpc","action":"newBrowser","status":"started"}
+{"level":"info","time":"2026-06-15T02:27:59.176Z","seq":3,"component":"browser-library","msg":"Adding browser to stack: chromium, version: 148.0.7778.96"}
+{"level":"info","time":"2026-06-15T02:27:59.177Z","seq":4,"component":"browser-library","msg":"Adding 0 contexts to browser"}
+{"level":"info","time":"2026-06-15T02:27:59.177Z","seq":5,"component":"browser-library","event_kind":"grpc","action":"newBrowser","status":"succeeded"}
+{"level":"info","time":"2026-06-15T02:27:59.193Z","seq":6,"component":"browser-library","event_kind":"grpc","action":"newContext","status":"started"}
+{"level":"info","time":"2026-06-15T02:27:59.198Z","seq":7,"component":"browser-library","msg":"Creating new context with options: {\"acceptDownloads\":true,\"bypassCSP\":false,\"forcedColors\":\"none\",\"ignoreHTTPSErrors\":false,\"javaScriptEnabled\":true,\"offline\":false,\"reducedMotion\":\"no-preference\",\"serviceWorkers\":\"allow\",\"viewport\":{\"width\":1280,\"height\":720}}"}
+{"level":"info","time":"2026-06-15T02:27:59.199Z","seq":8,"component":"browser-library","msg":"currentBrowser: {\"_contextStack\":[],\"browser\":{\"_type\":\"Browser\",\"_guid\":\"browser@4755e24d1b16294f13a7cded9019f76a\"},\"name\":\"chromium\",\"id\":\"browser=3f2c52ab-d717-4bdb-a592-73219f99a8e2\",\"headless\":false}"}
+{"level":"info","time":"2026-06-15T02:27:59.199Z","seq":9,"component":"browser-library","msg":"Trace file: "}
+{"level":"info","time":"2026-06-15T02:27:59.229Z","seq":10,"component":"browser-library","msg":"Setting default timeout for context context=ca8a671d-5467-44ba-b03c-9d05be8cf711 to 10000"}
+{"level":"info","time":"2026-06-15T02:27:59.229Z","seq":11,"component":"browser-library","msg":"Changed active context: context=ca8a671d-5467-44ba-b03c-9d05be8cf711"}
+{"level":"info","time":"2026-06-15T02:27:59.230Z","seq":12,"component":"browser-library","event_kind":"grpc","action":"newContext","status":"succeeded"}
+{"level":"info","time":"2026-06-15T02:27:59.240Z","seq":13,"component":"browser-library","event_kind":"grpc","action":"newPage","status":"started"}
+{"level":"info","time":"2026-06-15T02:27:59.240Z","seq":14,"component":"browser-library","msg":"currentBrowser: {\"_contextStack\":[{\"id\":\"context=ca8a671d-5467-44ba-b03c-9d05be8cf711\",\"c\":{\"_type\":\"BrowserContext\",\"_guid\":\"browser-context@81a96d72b7a0b28c48336ac9d0ec536a\"},\"pageStack\":[],\"options\":{\"acceptDownloads\":true,\"bypassCSP\":false,\"forcedColors\":\"none\",\"ignoreHTTPSErrors\":false,\"javaScriptEnabled\":true,\"offline\":false,\"reducedMotion\":\"no-preference\",\"serviceWorkers\":\"allow\",\"viewport\":{\"width\":1280,\"height\":720}},\"traceFile\":\"\"}],\"browser\":{\"_type\":\"Browser\",\"_guid\":\"browser@4755e24d1b16294f13a7cded9019f76a\"},\"name\":\"chromium\",\"id\":\"browser=3f2c52ab-d717-4bdb-a592-73219f99a8e2\",\"headless\":false}"}
+{"level":"info","time":"2026-06-15T02:27:59.470Z","seq":15,"component":"browser-library","msg":"Video path: undefined"}
+{"level":"info","time":"2026-06-15T02:27:59.470Z","seq":16,"component":"browser-library","msg":"Changed active page"}
+{"level":"info","time":"2026-06-15T02:28:00.090Z","seq":17,"component":"browser-library","event_kind":"grpc","action":"newPage","status":"succeeded"}
+{"level":"info","time":"2026-06-15T02:28:00.094Z","seq":18,"component":"browser-library","event_kind":"grpc","action":"click","status":"started"}
+{"level":"info","time":"2026-06-15T02:28:00.094Z","seq":19,"component":"browser-library","msg":"Strict mode is enabled, find Locator with text=Registrar in page."}
+{"level":"info","time":"2026-06-15T02:28:00.203Z","seq":20,"component":"browser-library","event_kind":"grpc","action":"click","status":"succeeded"}
+{"level":"info","time":"2026-06-15T02:28:00.209Z","seq":21,"component":"browser-library","event_kind":"grpc","action":"fillText","status":"started"}
+{"level":"info","time":"2026-06-15T02:28:00.209Z","seq":22,"component":"browser-library","msg":"Strict mode is enabled, find Locator with //div[@class='card__register']//input[@name='name'] in page."}
+{"level":"info","time":"2026-06-15T02:28:00.224Z","seq":23,"component":"browser-library","event_kind":"grpc","action":"fillText","status":"succeeded"}
+{"level":"info","time":"2026-06-15T02:28:00.233Z","seq":24,"component":"browser-library","event_kind":"grpc","action":"fillText","status":"started"}
+{"level":"info","time":"2026-06-15T02:28:00.233Z","seq":25,"component":"browser-library","msg":"Strict mode is enabled, find Locator with //div[@class='card__register']//input[@name='email'] in page."}
+{"level":"info","time":"2026-06-15T02:28:00.252Z","seq":26,"component":"browser-library","event_kind":"grpc","action":"fillText","status":"succeeded"}
+{"level":"info","time":"2026-06-15T02:28:00.256Z","seq":27,"component":"browser-library","event_kind":"grpc","action":"fillText","status":"started"}
+{"level":"info","time":"2026-06-15T02:28:00.256Z","seq":28,"component":"browser-library","msg":"Strict mode is enabled, find Locator with //div[@class='card__register']//input[@name='password'] in page."}
+{"level":"info","time":"2026-06-15T02:28:00.267Z","seq":29,"component":"browser-library","event_kind":"grpc","action":"fillText","status":"succeeded"}
+{"level":"info","time":"2026-06-15T02:28:00.271Z","seq":30,"component":"browser-library","event_kind":"grpc","action":"fillText","status":"started"}
+{"level":"info","time":"2026-06-15T02:28:00.271Z","seq":31,"component":"browser-library","msg":"Strict mode is enabled, find Locator with //div[@class='card__register']//input[@name='passwordConfirmation'] in page."}
+{"level":"info","time":"2026-06-15T02:28:00.278Z","seq":32,"component":"browser-library","event_kind":"grpc","action":"fillText","status":"succeeded"}
+{"level":"info","time":"2026-06-15T02:28:00.281Z","seq":33,"component":"browser-library","event_kind":"grpc","action":"click","status":"started"}
+{"level":"info","time":"2026-06-15T02:28:00.281Z","seq":34,"component":"browser-library","msg":"Strict mode is enabled, find Locator with id=toggleAddBalance in page."}
+{"level":"info","time":"2026-06-15T02:28:01.670Z","seq":35,"component":"browser-library","event_kind":"grpc","action":"click","status":"succeeded"}
+{"level":"info","time":"2026-06-15T02:28:01.674Z","seq":36,"component":"browser-library","event_kind":"grpc","action":"click","status":"started"}
+{"level":"info","time":"2026-06-15T02:28:01.674Z","seq":37,"component":"browser-library","msg":"Strict mode is enabled, find Locator with text=Cadastrar in page."}
+{"level":"info","time":"2026-06-15T02:28:01.706Z","seq":38,"component":"browser-library","event_kind":"grpc","action":"click","status":"succeeded"}
+{"level":"info","time":"2026-06-15T02:28:01.710Z","seq":39,"component":"browser-library","event_kind":"grpc","action":"waitForElementState","status":"started"}
+{"level":"info","time":"2026-06-15T02:28:01.710Z","seq":40,"component":"browser-library","msg":"Strict mode is enabled, find Locator with id=modalText in page."}
+{"level":"info","time":"2026-06-15T02:28:01.715Z","seq":41,"component":"browser-library","event_kind":"grpc","action":"waitForElementState","status":"succeeded"}
+{"level":"info","time":"2026-06-15T02:28:01.718Z","seq":42,"component":"browser-library","event_kind":"grpc","action":"getText","status":"started"}
+{"level":"info","time":"2026-06-15T02:28:01.718Z","seq":43,"component":"browser-library","msg":"Strict mode is enabled, find Locator with id=modalText in page."}
+{"level":"info","time":"2026-06-15T02:28:01.718Z","seq":44,"component":"browser-library","msg":"Getting text content with text type ROBOT_FRAMEWORK_BROWSER_NO_SET"}
+{"level":"info","time":"2026-06-15T02:28:01.718Z","seq":45,"component":"browser-library","msg":"Getting text content without text type"}
+{"level":"info","time":"2026-06-15T02:28:01.739Z","seq":46,"component":"browser-library","msg":"Locator was not an <input>, <textarea>, or <select> element, falling back to innerText."}
+{"level":"info","time":"2026-06-15T02:28:01.742Z","seq":47,"component":"browser-library","msg":"Retrieved text for element id=modalText containing '[\"A conta 315-2 foi criada com sucesso\"]' with text type ROBOT_FRAMEWORK_BROWSER_NO_SET"}
+{"level":"info","time":"2026-06-15T02:28:01.742Z","seq":48,"component":"browser-library","event_kind":"grpc","action":"getText","status":"succeeded"}
+{"level":"info","time":"2026-06-15T02:28:01.746Z","seq":49,"component":"browser-library","event_kind":"grpc","action":"getText","status":"started"}
+{"level":"info","time":"2026-06-15T02:28:01.746Z","seq":50,"component":"browser-library","msg":"Strict mode is enabled, find Locator with id=modalText in page."}
+{"level":"info","time":"2026-06-15T02:28:01.746Z","seq":51,"component":"browser-library","msg":"Getting text content with text type ROBOT_FRAMEWORK_BROWSER_NO_SET"}
+{"level":"info","time":"2026-06-15T02:28:01.746Z","seq":52,"component":"browser-library","msg":"Getting text content without text type"}
+{"level":"info","time":"2026-06-15T02:28:01.754Z","seq":53,"component":"browser-library","msg":"Locator was not an <input>, <textarea>, or <select> element, falling back to innerText."}
+{"level":"info","time":"2026-06-15T02:28:01.756Z","seq":54,"component":"browser-library","msg":"Retrieved text for element id=modalText containing '[\"A conta 315-2 foi criada com sucesso\"]' with text type ROBOT_FRAMEWORK_BROWSER_NO_SET"}
+{"level":"info","time":"2026-06-15T02:28:01.756Z","seq":55,"component":"browser-library","event_kind":"grpc","action":"getText","status":"succeeded"}
+{"level":"info","time":"2026-06-15T02:28:01.774Z","seq":56,"component":"browser-library","event_kind":"grpc","action":"click","status":"started"}
+{"level":"info","time":"2026-06-15T02:28:01.774Z","seq":57,"component":"browser-library","msg":"Strict mode is enabled, find Locator with id=btnCloseModal in page."}
+{"level":"info","time":"2026-06-15T02:28:02.636Z","seq":58,"component":"browser-library","event_kind":"grpc","action":"click","status":"succeeded"}
+{"level":"info","time":"2026-06-15T02:28:02.659Z","seq":59,"component":"browser-library","event_kind":"grpc","action":"click","status":"started"}
+{"level":"info","time":"2026-06-15T02:28:02.659Z","seq":60,"component":"browser-library","msg":"Strict mode is enabled, find Locator with text=Registrar in page."}
+{"level":"info","time":"2026-06-15T02:28:02.711Z","seq":61,"component":"browser-library","event_kind":"grpc","action":"click","status":"succeeded"}
+{"level":"info","time":"2026-06-15T02:28:02.715Z","seq":62,"component":"browser-library","event_kind":"grpc","action":"fillText","status":"started"}
+{"level":"info","time":"2026-06-15T02:28:02.715Z","seq":63,"component":"browser-library","msg":"Strict mode is enabled, find Locator with //div[@class='card__register']//input[@name='name'] in page."}
+{"level":"info","time":"2026-06-15T02:28:02.723Z","seq":64,"component":"browser-library","event_kind":"grpc","action":"fillText","status":"succeeded"}
+{"level":"info","time":"2026-06-15T02:28:02.728Z","seq":65,"component":"browser-library","event_kind":"grpc","action":"fillText","status":"started"}
+{"level":"info","time":"2026-06-15T02:28:02.728Z","seq":66,"component":"browser-library","msg":"Strict mode is enabled, find Locator with //div[@class='card__register']//input[@name='email'] in page."}
+{"level":"info","time":"2026-06-15T02:28:02.738Z","seq":67,"component":"browser-library","event_kind":"grpc","action":"fillText","status":"succeeded"}
+{"level":"info","time":"2026-06-15T02:28:02.743Z","seq":68,"component":"browser-library","event_kind":"grpc","action":"fillText","status":"started"}
+{"level":"info","time":"2026-06-15T02:28:02.743Z","seq":69,"component":"browser-library","msg":"Strict mode is enabled, find Locator with //div[@class='card__register']//input[@name='password'] in page."}
+{"level":"info","time":"2026-06-15T02:28:02.753Z","seq":70,"component":"browser-library","event_kind":"grpc","action":"fillText","status":"succeeded"}
+{"level":"info","time":"2026-06-15T02:28:02.756Z","seq":71,"component":"browser-library","event_kind":"grpc","action":"fillText","status":"started"}
+{"level":"info","time":"2026-06-15T02:28:02.756Z","seq":72,"component":"browser-library","msg":"Strict mode is enabled, find Locator with //div[@class='card__register']//input[@name='passwordConfirmation'] in page."}
+{"level":"info","time":"2026-06-15T02:28:02.763Z","seq":73,"component":"browser-library","event_kind":"grpc","action":"fillText","status":"succeeded"}
+{"level":"info","time":"2026-06-15T02:28:02.765Z","seq":74,"component":"browser-library","event_kind":"grpc","action":"click","status":"started"}
+{"level":"info","time":"2026-06-15T02:28:02.765Z","seq":75,"component":"browser-library","msg":"Strict mode is enabled, find Locator with id=toggleAddBalance in page."}
+{"level":"info","time":"2026-06-15T02:28:04.165Z","seq":76,"component":"browser-library","event_kind":"grpc","action":"click","status":"succeeded"}
+{"level":"info","time":"2026-06-15T02:28:04.168Z","seq":77,"component":"browser-library","event_kind":"grpc","action":"click","status":"started"}
+{"level":"info","time":"2026-06-15T02:28:04.168Z","seq":78,"component":"browser-library","msg":"Strict mode is enabled, find Locator with text=Cadastrar in page."}
+{"level":"info","time":"2026-06-15T02:28:04.202Z","seq":79,"component":"browser-library","event_kind":"grpc","action":"click","status":"succeeded"}
+{"level":"info","time":"2026-06-15T02:28:04.207Z","seq":80,"component":"browser-library","event_kind":"grpc","action":"waitForElementState","status":"started"}
+{"level":"info","time":"2026-06-15T02:28:04.207Z","seq":81,"component":"browser-library","msg":"Strict mode is enabled, find Locator with id=modalText in page."}
+{"level":"info","time":"2026-06-15T02:28:04.210Z","seq":82,"component":"browser-library","event_kind":"grpc","action":"waitForElementState","status":"succeeded"}
+{"level":"info","time":"2026-06-15T02:28:04.213Z","seq":83,"component":"browser-library","event_kind":"grpc","action":"getText","status":"started"}
+{"level":"info","time":"2026-06-15T02:28:04.213Z","seq":84,"component":"browser-library","msg":"Strict mode is enabled, find Locator with id=modalText in page."}
+{"level":"info","time":"2026-06-15T02:28:04.213Z","seq":85,"component":"browser-library","msg":"Getting text content with text type ROBOT_FRAMEWORK_BROWSER_NO_SET"}
+{"level":"info","time":"2026-06-15T02:28:04.213Z","seq":86,"component":"browser-library","msg":"Getting text content without text type"}
+{"level":"info","time":"2026-06-15T02:28:04.220Z","seq":87,"component":"browser-library","msg":"Locator was not an <input>, <textarea>, or <select> element, falling back to innerText."}
+{"level":"info","time":"2026-06-15T02:28:04.223Z","seq":88,"component":"browser-library","msg":"Retrieved text for element id=modalText containing '[\"A conta 565-7 foi criada com sucesso\"]' with text type ROBOT_FRAMEWORK_BROWSER_NO_SET"}
+{"level":"info","time":"2026-06-15T02:28:04.223Z","seq":89,"component":"browser-library","event_kind":"grpc","action":"getText","status":"succeeded"}
+{"level":"info","time":"2026-06-15T02:28:04.227Z","seq":90,"component":"browser-library","event_kind":"grpc","action":"getText","status":"started"}
+{"level":"info","time":"2026-06-15T02:28:04.227Z","seq":91,"component":"browser-library","msg":"Strict mode is enabled, find Locator with id=modalText in page."}
+{"level":"info","time":"2026-06-15T02:28:04.227Z","seq":92,"component":"browser-library","msg":"Getting text content with text type ROBOT_FRAMEWORK_BROWSER_NO_SET"}
+{"level":"info","time":"2026-06-15T02:28:04.227Z","seq":93,"component":"browser-library","msg":"Getting text content without text type"}
+{"level":"info","time":"2026-06-15T02:28:04.234Z","seq":94,"component":"browser-library","msg":"Locator was not an <input>, <textarea>, or <select> element, falling back to innerText."}
+{"level":"info","time":"2026-06-15T02:28:04.236Z","seq":95,"component":"browser-library","msg":"Retrieved text for element id=modalText containing '[\"A conta 565-7 foi criada com sucesso\"]' with text type ROBOT_FRAMEWORK_BROWSER_NO_SET"}
+{"level":"info","time":"2026-06-15T02:28:04.236Z","seq":96,"component":"browser-library","event_kind":"grpc","action":"getText","status":"succeeded"}
+{"level":"info","time":"2026-06-15T02:28:04.261Z","seq":97,"component":"browser-library","event_kind":"grpc","action":"click","status":"started"}
+{"level":"info","time":"2026-06-15T02:28:04.261Z","seq":98,"component":"browser-library","msg":"Strict mode is enabled, find Locator with id=btnCloseModal in page."}
+{"level":"info","time":"2026-06-15T02:28:05.125Z","seq":99,"component":"browser-library","event_kind":"grpc","action":"click","status":"succeeded"}
+{"level":"info","time":"2026-06-15T02:28:05.131Z","seq":100,"component":"browser-library","event_kind":"grpc","action":"fillText","status":"started"}
+{"level":"info","time":"2026-06-15T02:28:05.131Z","seq":101,"component":"browser-library","msg":"Strict mode is enabled, find Locator with //div[@class='card__login']//input[@name='email'] in page."}
+{"level":"info","time":"2026-06-15T02:28:05.139Z","seq":102,"component":"browser-library","event_kind":"grpc","action":"fillText","status":"succeeded"}
+{"level":"info","time":"2026-06-15T02:28:05.142Z","seq":103,"component":"browser-library","event_kind":"grpc","action":"fillText","status":"started"}
+{"level":"info","time":"2026-06-15T02:28:05.142Z","seq":104,"component":"browser-library","msg":"Strict mode is enabled, find Locator with //div[@class='card__login']//input[@name='password'] in page."}
+{"level":"info","time":"2026-06-15T02:28:05.153Z","seq":105,"component":"browser-library","event_kind":"grpc","action":"fillText","status":"succeeded"}
+{"level":"info","time":"2026-06-15T02:28:05.156Z","seq":106,"component":"browser-library","event_kind":"grpc","action":"click","status":"started"}
+{"level":"info","time":"2026-06-15T02:28:05.156Z","seq":107,"component":"browser-library","msg":"Strict mode is enabled, find Locator with text=Acessar in page."}
+{"level":"info","time":"2026-06-15T02:28:05.212Z","seq":108,"component":"browser-library","event_kind":"grpc","action":"click","status":"succeeded"}
+{"level":"info","time":"2026-06-15T02:28:05.215Z","seq":109,"component":"browser-library","event_kind":"grpc","action":"click","status":"started"}
+{"level":"info","time":"2026-06-15T02:28:05.215Z","seq":110,"component":"browser-library","msg":"Strict mode is enabled, find Locator with id=btn-TRANSFERÊNCIA in page."}
+{"level":"info","time":"2026-06-15T02:28:05.340Z","seq":111,"component":"browser-library","event_kind":"grpc","action":"click","status":"succeeded"}
+{"level":"info","time":"2026-06-15T02:28:05.345Z","seq":112,"component":"browser-library","event_kind":"grpc","action":"fillText","status":"started"}
+{"level":"info","time":"2026-06-15T02:28:05.345Z","seq":113,"component":"browser-library","msg":"Strict mode is enabled, find Locator with //input[@type='accountNumber'] in page."}
+{"level":"info","time":"2026-06-15T02:28:05.382Z","seq":114,"component":"browser-library","event_kind":"grpc","action":"fillText","status":"succeeded"}
+{"level":"info","time":"2026-06-15T02:28:05.386Z","seq":115,"component":"browser-library","event_kind":"grpc","action":"fillText","status":"started"}
+{"level":"info","time":"2026-06-15T02:28:05.386Z","seq":116,"component":"browser-library","msg":"Strict mode is enabled, find Locator with //input[@type='digit'] in page."}
+{"level":"info","time":"2026-06-15T02:28:05.397Z","seq":117,"component":"browser-library","event_kind":"grpc","action":"fillText","status":"succeeded"}
+{"level":"info","time":"2026-06-15T02:28:05.399Z","seq":118,"component":"browser-library","event_kind":"grpc","action":"fillText","status":"started"}
+{"level":"info","time":"2026-06-15T02:28:05.400Z","seq":119,"component":"browser-library","msg":"Strict mode is enabled, find Locator with //input[@type='transferValue'] in page."}
+{"level":"info","time":"2026-06-15T02:28:05.409Z","seq":120,"component":"browser-library","event_kind":"grpc","action":"fillText","status":"succeeded"}
+{"level":"info","time":"2026-06-15T02:28:05.414Z","seq":121,"component":"browser-library","event_kind":"grpc","action":"fillText","status":"started"}
+{"level":"info","time":"2026-06-15T02:28:05.414Z","seq":122,"component":"browser-library","msg":"Strict mode is enabled, find Locator with //input[@type='description'] in page."}
+{"level":"info","time":"2026-06-15T02:28:05.422Z","seq":123,"component":"browser-library","event_kind":"grpc","action":"fillText","status":"succeeded"}
+{"level":"info","time":"2026-06-15T02:28:05.427Z","seq":124,"component":"browser-library","event_kind":"grpc","action":"click","status":"started"}
+{"level":"info","time":"2026-06-15T02:28:05.427Z","seq":125,"component":"browser-library","msg":"Strict mode is enabled, find Locator with text=Transferir agora in page."}
+{"level":"info","time":"2026-06-15T02:28:05.490Z","seq":126,"component":"browser-library","event_kind":"grpc","action":"click","status":"succeeded"}
+{"level":"info","time":"2026-06-15T02:28:05.497Z","seq":127,"component":"browser-library","event_kind":"grpc","action":"waitForElementState","status":"started"}
+{"level":"info","time":"2026-06-15T02:28:05.497Z","seq":128,"component":"browser-library","msg":"Strict mode is enabled, find Locator with text=Transferencia realizada com sucesso in page."}
+{"level":"info","time":"2026-06-15T02:28:05.502Z","seq":129,"component":"browser-library","event_kind":"grpc","action":"waitForElementState","status":"succeeded"}
+{"level":"info","time":"2026-06-15T02:28:05.505Z","seq":130,"component":"browser-library","event_kind":"grpc","action":"getText","status":"started"}
+{"level":"info","time":"2026-06-15T02:28:05.505Z","seq":131,"component":"browser-library","msg":"Strict mode is enabled, find Locator with text=Transferencia realizada com sucesso in page."}
+{"level":"info","time":"2026-06-15T02:28:05.505Z","seq":132,"component":"browser-library","msg":"Getting text content with text type ROBOT_FRAMEWORK_BROWSER_NO_SET"}
+{"level":"info","time":"2026-06-15T02:28:05.505Z","seq":133,"component":"browser-library","msg":"Getting text content without text type"}
+{"level":"info","time":"2026-06-15T02:28:05.514Z","seq":134,"component":"browser-library","msg":"Locator was not an <input>, <textarea>, or <select> element, falling back to innerText."}
+{"level":"info","time":"2026-06-15T02:28:05.516Z","seq":135,"component":"browser-library","msg":"Retrieved text for element text=Transferencia realizada com sucesso containing '[\"Transferencia realizada com sucesso\"]' with text type ROBOT_FRAMEWORK_BROWSER_NO_SET"}
+{"level":"info","time":"2026-06-15T02:28:05.516Z","seq":136,"component":"browser-library","event_kind":"grpc","action":"getText","status":"succeeded"}
+{"level":"info","time":"2026-06-15T02:28:05.520Z","seq":137,"component":"browser-library","event_kind":"grpc","action":"click","status":"started"}
+{"level":"info","time":"2026-06-15T02:28:05.521Z","seq":138,"component":"browser-library","msg":"Strict mode is enabled, find Locator with id=btnCloseModal in page."}
+{"level":"info","time":"2026-06-15T02:28:06.397Z","seq":139,"component":"browser-library","event_kind":"grpc","action":"click","status":"succeeded"}
+{"level":"info","time":"2026-06-15T02:28:06.404Z","seq":140,"suite_id":"s1","suite_name":"Transfer","component":"browser-library","event_kind":"grpc","action":"getBrowserCatalog","status":"started"}
+{"level":"info","time":"2026-06-15T02:28:06.405Z","seq":141,"suite_id":"s1","suite_name":"Transfer","component":"browser-library","event_kind":"grpc","action":"getBrowserCatalog","status":"succeeded"}
+{"level":"info","time":"2026-06-15T02:28:06.407Z","seq":142,"suite_id":"s1","suite_name":"Transfer","component":"browser-library","event_kind":"grpc","action":"getBrowserCatalog","status":"started"}
+{"level":"info","time":"2026-06-15T02:28:06.407Z","seq":143,"suite_id":"s1","suite_name":"Transfer","component":"browser-library","event_kind":"grpc","action":"getBrowserCatalog","status":"succeeded"}
+{"level":"info","time":"2026-06-15T02:28:06.408Z","seq":144,"suite_id":"s1","suite_name":"Transfer","component":"browser-library","event_kind":"grpc","action":"getBrowserCatalog","status":"started"}
+{"level":"info","time":"2026-06-15T02:28:06.408Z","seq":145,"suite_id":"s1","suite_name":"Transfer","component":"browser-library","event_kind":"grpc","action":"getBrowserCatalog","status":"succeeded"}
+{"level":"info","time":"2026-06-15T02:28:06.410Z","seq":146,"suite_id":"s1","suite_name":"Transfer","component":"browser-library","event_kind":"grpc","action":"getBrowserCatalog","status":"started"}
+{"level":"info","time":"2026-06-15T02:28:06.410Z","seq":147,"suite_id":"s1","suite_name":"Transfer","component":"browser-library","event_kind":"grpc","action":"getBrowserCatalog","status":"succeeded"}
+{"level":"info","time":"2026-06-15T02:28:06.412Z","seq":148,"suite_id":"s1","suite_name":"Transfer","component":"browser-library","msg":"Changed active context: context=ca8a671d-5467-44ba-b03c-9d05be8cf711"}
+{"level":"info","time":"2026-06-15T02:28:06.412Z","seq":149,"suite_id":"s1","suite_name":"Transfer","component":"browser-library","msg":"Changing current active page: page=48e66cb8-dfb0-4097-8bf1-b1b3b4a5d589"}
+{"level":"info","time":"2026-06-15T02:28:06.412Z","seq":150,"suite_id":"s1","suite_name":"Transfer","component":"browser-library","msg":"Changed active page"}
+{"level":"info","time":"2026-06-15T02:28:06.415Z","seq":151,"suite_id":"s1","suite_name":"Transfer","component":"browser-library","event_kind":"grpc","action":"closeContext","status":"started"}
+{"level":"info","time":"2026-06-15T02:28:06.423Z","seq":152,"suite_id":"s1","suite_name":"Transfer","component":"browser-library","msg":"Removed page=30db2318-60ce-43a8-aafa-ae8f83ce51dc from context=ca8a671d-5467-44ba-b03c-9d05be8cf711 page stack"}
+{"level":"info","time":"2026-06-15T02:28:06.427Z","seq":153,"suite_id":"s1","suite_name":"Transfer","component":"browser-library","event_kind":"grpc","action":"closeContext","status":"succeeded"}
+{"level":"info","time":"2026-06-15T02:28:06.440Z","seq":154,"component":"browser-library","event_kind":"grpc","action":"getBrowserCatalog","status":"started"}
+{"level":"info","time":"2026-06-15T02:28:06.440Z","seq":155,"component":"browser-library","event_kind":"grpc","action":"getBrowserCatalog","status":"succeeded"}
+{"level":"info","time":"2026-06-15T02:28:06.508Z","seq":156,"component":"browser-library","event_kind":"grpc","action":"closeAllBrowsers","status":"started"}
+{"level":"info","time":"2026-06-15T02:28:06.675Z","seq":157,"component":"browser-library","event_kind":"grpc","action":"closeAllBrowsers","status":"succeeded"}

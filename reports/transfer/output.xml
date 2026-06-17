@@ -1,0 +1,876 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.2 (Python 3.14.4 on win32)" generated="2026-06-14T23:27:57.475123" rpa="false" schemaversion="5">
+<suite id="s1" name="Transfer" source="D:\Projetos(Desenvolvimento)\BugBank-RobotFramework\tests\transfer.robot">
+<test id="s1-t1" name="Transferencia Entre Contas" line="10">
+<kw name="Gerar Usuario" owner="register">
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2026-06-14T23:27:57.834809" level="INFO">${uuid} = daca6276-1f68-48fc-ad6d-fa132192f3d0</msg>
+<var>${uuid}</var>
+<arg>str(uuid.uuid4())</arg>
+<arg>modules=uuid</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2026-06-14T23:27:57.834009" elapsed="0.000853"/>
+</kw>
+<if>
+<branch type="IF" condition="'${tipo}' == 'ORIGEM'">
+<kw name="Set Suite Variable" owner="BuiltIn">
+<msg time="2026-06-14T23:27:57.836513" level="INFO">${EMAIL_ORIGEM} = origem_daca6276-1f68-48fc-ad6d-fa132192f3d0@bugbank.com</msg>
+<arg>${EMAIL_ORIGEM}</arg>
+<arg>origem_${uuid}@bugbank.com</arg>
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<status status="PASS" start="2026-06-14T23:27:57.835368" elapsed="0.001204"/>
+</kw>
+<kw name="Set Suite Variable" owner="BuiltIn">
+<msg time="2026-06-14T23:27:57.837678" level="INFO">${NOME_ORIGEM} = Reginaldo QA</msg>
+<arg>${NOME_ORIGEM}</arg>
+<arg>Reginaldo QA</arg>
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<status status="PASS" start="2026-06-14T23:27:57.836729" elapsed="0.001000"/>
+</kw>
+<kw name="Set Suite Variable" owner="BuiltIn">
+<msg time="2026-06-14T23:27:57.838787" level="INFO">${SENHA_ORIGEM} = 123456</msg>
+<arg>${SENHA_ORIGEM}</arg>
+<arg>123456</arg>
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<status status="PASS" start="2026-06-14T23:27:57.837850" elapsed="0.000985"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Usuario origem criado: ${EMAIL_ORIGEM}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-06-14T23:27:57.838950" elapsed="0.000401"/>
+</kw>
+<status status="PASS" start="2026-06-14T23:27:57.835023" elapsed="0.004393"/>
+</branch>
+<branch type="ELSE">
+<kw name="Set Suite Variable" owner="BuiltIn">
+<arg>${EMAIL_DESTINO}</arg>
+<arg>destino_${uuid}@bugbank.com</arg>
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<status status="NOT RUN" start="2026-06-14T23:27:57.839665" elapsed="0.000086"/>
+</kw>
+<kw name="Set Suite Variable" owner="BuiltIn">
+<arg>${NOME_DESTINO}</arg>
+<arg>Receptor da Silva</arg>
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<status status="NOT RUN" start="2026-06-14T23:27:57.839878" elapsed="0.000082"/>
+</kw>
+<kw name="Set Suite Variable" owner="BuiltIn">
+<arg>${SENHA_DESTINO}</arg>
+<arg>123456</arg>
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<status status="NOT RUN" start="2026-06-14T23:27:57.840197" elapsed="0.000158"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Usuario destino criado: ${EMAIL_DESTINO}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2026-06-14T23:27:57.840481" elapsed="0.000084"/>
+</kw>
+<status status="NOT RUN" start="2026-06-14T23:27:57.839475" elapsed="0.001138"/>
+</branch>
+<status status="PASS" start="2026-06-14T23:27:57.834990" elapsed="0.005665"/>
+</if>
+<arg>ORIGEM</arg>
+<status status="PASS" start="2026-06-14T23:27:57.833086" elapsed="0.007634"/>
+</kw>
+<kw name="Abrir BugBank" owner="login">
+<kw name="New Browser" owner="Browser">
+<msg time="2026-06-14T23:27:57.842028" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "D:\\Projetos(Desenvolvimento)\\BugBank-RobotFramework\\reports\\transfer\\browser\\traces\\temp\\82e69f19-9f77-4b95-b92f-f10bad586770"}</msg>
+<msg time="2026-06-14T23:27:57.870742" level="INFO">Starting Browser process C:\Users\rsajr\AppData\Roaming\Python\Python314\site-packages\Browser\wrapper\index.js using at 127.0.0.1:63829</msg>
+<msg time="2026-06-14T23:27:59.184162" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"D:\\Projetos(Desenvolvimento)\\BugBank-RobotFramework\\reports\\transfer\\browser\\traces\\temp\\82e69f19-9f77-4b95-b92f-f10bad586770"}</msg>
+<arg>chromium</arg>
+<arg>headless=False</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2026-06-14T23:27:57.841306" elapsed="1.343329"/>
+</kw>
+<kw name="New Context" owner="Browser">
+<msg time="2026-06-14T23:27:59.192004" level="INFO">{
+  "acceptDownloads": true,
+  "bypassCSP": false,
+  "forcedColors": "none",
+  "ignoreHTTPSErrors": false,
+  "javaScriptEnabled": true,
+  "offline": false,
+  "reducedMotion": "no-preference",
+  "serviceWorkers": "allow",
+  "viewport": {
+    "width": 1280,
+    "height": 720
+  }
+}</msg>
+<msg time="2026-06-14T23:27:59.235768" level="INFO">Successfully created context. </msg>
+<msg time="2026-06-14T23:27:59.235893" level="INFO">{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'width': 1280, 'height': 720}}</msg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new BrowserContext with specified options.</doc>
+<status status="PASS" start="2026-06-14T23:27:59.186472" elapsed="0.049577"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2026-06-14T23:28:00.092465" level="INFO">Successfully initialized new page object and opened url: https://bugbank.netlify.app</msg>
+<arg>${BASE_URL}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2026-06-14T23:27:59.236937" elapsed="0.855716"/>
+</kw>
+<status status="PASS" start="2026-06-14T23:27:57.840990" elapsed="2.251824"/>
+</kw>
+<kw name="Realizar Cadastro" owner="register">
+<kw name="Click" owner="Browser">
+<msg time="2026-06-14T23:28:00.094364" level="INFO">Clicks the element 'text=Registrar'.</msg>
+<arg>text=Registrar</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2026-06-14T23:28:00.093882" elapsed="0.112881"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2026-06-14T23:28:00.208270" level="INFO">Fills the text 'Reginaldo QA' in the given field.</msg>
+<arg>${INPUT_NOME}</arg>
+<arg>${nome}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2026-06-14T23:28:00.207146" elapsed="0.023753"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2026-06-14T23:28:00.232438" level="INFO">Fills the text 'origem_daca6276-1f68-48fc-ad6d-fa132192f3d0@bugbank.com' in the given field.</msg>
+<arg>${INPUT_EMAIL}</arg>
+<arg>${email}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2026-06-14T23:28:00.231334" elapsed="0.023497"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2026-06-14T23:28:00.256025" level="INFO">Fills the text '123456' in the given field.</msg>
+<arg>${INPUT_SENHA}</arg>
+<arg>${senha}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2026-06-14T23:28:00.255143" elapsed="0.014289"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2026-06-14T23:28:00.270612" level="INFO">Fills the text '123456' in the given field.</msg>
+<arg>${INPUT_CONFIRMAR}</arg>
+<arg>${senha}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2026-06-14T23:28:00.269729" elapsed="0.010624"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2026-06-14T23:28:00.281060" level="INFO">Clicks the element 'id=toggleAddBalance'.</msg>
+<arg>id=toggleAddBalance</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2026-06-14T23:28:00.280548" elapsed="1.392608"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2026-06-14T23:28:01.673988" level="INFO">Clicks the element 'text=Cadastrar'.</msg>
+<arg>text=Cadastrar</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2026-06-14T23:28:01.673392" elapsed="0.034800"/>
+</kw>
+<arg>${NOME_ORIGEM}</arg>
+<arg>${EMAIL_ORIGEM}</arg>
+<arg>${SENHA_ORIGEM}</arg>
+<status status="PASS" start="2026-06-14T23:28:00.093260" elapsed="1.615111"/>
+</kw>
+<kw name="Validar Cadastro Com Sucesso" owner="register">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2026-06-14T23:28:01.716895" level="INFO">Waited for Element with selector id=modalText at state visible</msg>
+<arg>id=modalText</arg>
+<arg>visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2026-06-14T23:28:01.709467" elapsed="0.007624"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2026-06-14T23:28:01.744108" level="INFO">Text: ['A conta 315-2 foi criada com sucesso']</msg>
+<msg time="2026-06-14T23:28:01.744280" level="INFO">${mensagem} = A conta 315-2 foi criada com sucesso</msg>
+<var>${mensagem}</var>
+<arg>id=modalText</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2026-06-14T23:28:01.717370" elapsed="0.026944"/>
+</kw>
+<kw name="Should Contain" owner="BuiltIn">
+<arg>${mensagem}</arg>
+<arg>foi criada com sucesso</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" start="2026-06-14T23:28:01.744498" elapsed="0.000562"/>
+</kw>
+<status status="PASS" start="2026-06-14T23:28:01.708819" elapsed="0.036323"/>
+</kw>
+<kw name="Capturar Conta" owner="register">
+<kw name="Get Text" owner="Browser">
+<msg time="2026-06-14T23:28:01.757972" level="INFO">Text: ['A conta 315-2 foi criada com sucesso']</msg>
+<msg time="2026-06-14T23:28:01.758169" level="INFO">${mensagem} = A conta 315-2 foi criada com sucesso</msg>
+<var>${mensagem}</var>
+<arg>id=modalText</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2026-06-14T23:28:01.745986" elapsed="0.012233"/>
+</kw>
+<kw name="Get Regexp Matches" owner="String">
+<msg time="2026-06-14T23:28:01.759074" level="INFO">${matches} = ['315-2']</msg>
+<var>${matches}</var>
+<arg>${mensagem}</arg>
+<arg>[0-9]+-[0-9]+</arg>
+<doc>Returns a list of all non-overlapping matches in the given string.</doc>
+<status status="PASS" start="2026-06-14T23:28:01.758488" elapsed="0.000636"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Matches encontrados: ${matches}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-06-14T23:28:01.759338" elapsed="0.000594"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2026-06-14T23:28:01.760548" level="INFO">${conta} = 315-2</msg>
+<var>${conta}</var>
+<arg>${matches}[0]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2026-06-14T23:28:01.760103" elapsed="0.000479"/>
+</kw>
+<if>
+<branch type="IF" condition="'${tipo}' == 'ORIGEM'">
+<kw name="Set Suite Variable" owner="BuiltIn">
+<msg time="2026-06-14T23:28:01.762235" level="INFO">${CONTA_ORIGEM} = 315-2</msg>
+<arg>${CONTA_ORIGEM}</arg>
+<arg>${conta}</arg>
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<status status="PASS" start="2026-06-14T23:28:01.760958" elapsed="0.001395"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Conta origem criada: ${CONTA_ORIGEM}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-06-14T23:28:01.762634" elapsed="0.001064"/>
+</kw>
+<status status="PASS" start="2026-06-14T23:28:01.760688" elapsed="0.003142"/>
+</branch>
+<branch type="ELSE">
+<kw name="Set Suite Variable" owner="BuiltIn">
+<arg>${CONTA_DESTINO}</arg>
+<arg>${conta}</arg>
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<status status="NOT RUN" start="2026-06-14T23:28:01.764359" elapsed="0.000178"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Conta destino criada: ${CONTA_DESTINO}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2026-06-14T23:28:01.764782" elapsed="0.000134"/>
+</kw>
+<status status="NOT RUN" start="2026-06-14T23:28:01.763919" elapsed="0.001090"/>
+</branch>
+<status status="PASS" start="2026-06-14T23:28:01.760660" elapsed="0.004420"/>
+</if>
+<arg>ORIGEM</arg>
+<status status="PASS" start="2026-06-14T23:28:01.745615" elapsed="0.019582"/>
+</kw>
+<kw name="Separar Conta E Digito" owner="register">
+<if>
+<branch type="IF" condition="'${tipo}' == 'ORIGEM'">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2026-06-14T23:28:01.766669" level="INFO">${conta} = 315-2</msg>
+<var>${conta}</var>
+<arg>${CONTA_ORIGEM}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2026-06-14T23:28:01.766313" elapsed="0.000388"/>
+</kw>
+<status status="PASS" start="2026-06-14T23:28:01.766053" elapsed="0.000703"/>
+</branch>
+<branch type="ELSE">
+<kw name="Set Variable" owner="BuiltIn">
+<var>${conta}</var>
+<arg>${CONTA_DESTINO}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" start="2026-06-14T23:28:01.766958" elapsed="0.000082"/>
+</kw>
+<status status="NOT RUN" start="2026-06-14T23:28:01.766798" elapsed="0.000292"/>
+</branch>
+<status status="PASS" start="2026-06-14T23:28:01.766031" elapsed="0.001092"/>
+</if>
+<kw name="Split String" owner="String">
+<msg time="2026-06-14T23:28:01.767470" level="INFO">${partes} = ['315', '2']</msg>
+<var>${partes}</var>
+<arg>${conta}</arg>
+<arg>-</arg>
+<doc>Splits the ``string`` using ``separator`` as a delimiter string.</doc>
+<status status="PASS" start="2026-06-14T23:28:01.767220" elapsed="0.000283"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2026-06-14T23:28:01.767941" level="INFO">${numero} = 315</msg>
+<var>${numero}</var>
+<arg>${partes}[0]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2026-06-14T23:28:01.767616" elapsed="0.000355"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2026-06-14T23:28:01.768399" level="INFO">${digito} = 2</msg>
+<var>${digito}</var>
+<arg>${partes}[1]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2026-06-14T23:28:01.768080" elapsed="0.000351"/>
+</kw>
+<if>
+<branch type="IF" condition="'${tipo}' == 'ORIGEM'">
+<kw name="Set Suite Variable" owner="BuiltIn">
+<msg time="2026-06-14T23:28:01.769675" level="INFO">${NUMERO_CONTA_ORIGEM} = 315</msg>
+<arg>${NUMERO_CONTA_ORIGEM}</arg>
+<arg>${numero}</arg>
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<status status="PASS" start="2026-06-14T23:28:01.768743" elapsed="0.000981"/>
+</kw>
+<kw name="Set Suite Variable" owner="BuiltIn">
+<msg time="2026-06-14T23:28:01.770750" level="INFO">${DIGITO_CONTA_ORIGEM} = 2</msg>
+<arg>${DIGITO_CONTA_ORIGEM}</arg>
+<arg>${digito}</arg>
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<status status="PASS" start="2026-06-14T23:28:01.769844" elapsed="0.000979"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Conta Origem: ${NUMERO_CONTA_ORIGEM}-${DIGITO_CONTA_ORIGEM}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-06-14T23:28:01.770939" elapsed="0.000494"/>
+</kw>
+<status status="PASS" start="2026-06-14T23:28:01.768513" elapsed="0.003013"/>
+</branch>
+<branch type="ELSE">
+<kw name="Set Suite Variable" owner="BuiltIn">
+<arg>${NUMERO_CONTA_DESTINO}</arg>
+<arg>${numero}</arg>
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<status status="NOT RUN" start="2026-06-14T23:28:01.771971" elapsed="0.000150"/>
+</kw>
+<kw name="Set Suite Variable" owner="BuiltIn">
+<arg>${DIGITO_CONTA_DESTINO}</arg>
+<arg>${digito}</arg>
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<status status="NOT RUN" start="2026-06-14T23:28:01.772294" elapsed="0.000103"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Conta Destino: ${NUMERO_CONTA_DESTINO}-${DIGITO_CONTA_DESTINO}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2026-06-14T23:28:01.772532" elapsed="0.000093"/>
+</kw>
+<status status="NOT RUN" start="2026-06-14T23:28:01.771583" elapsed="0.001094"/>
+</branch>
+<status status="PASS" start="2026-06-14T23:28:01.768494" elapsed="0.004227"/>
+</if>
+<arg>ORIGEM</arg>
+<status status="PASS" start="2026-06-14T23:28:01.765723" elapsed="0.007066"/>
+</kw>
+<kw name="Fechar Modal Cadastro" owner="register">
+<kw name="Click" owner="Browser">
+<msg time="2026-06-14T23:28:01.774177" level="INFO">Clicks the element 'id=btnCloseModal'.</msg>
+<arg>id=btnCloseModal</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2026-06-14T23:28:01.773688" elapsed="0.865698"/>
+</kw>
+<status status="PASS" start="2026-06-14T23:28:01.773182" elapsed="0.866381"/>
+</kw>
+<kw name="Gerar Usuario" owner="register">
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2026-06-14T23:28:02.641695" level="INFO">${uuid} = 10416425-b8f9-420d-a7a5-27937ea21cbd</msg>
+<var>${uuid}</var>
+<arg>str(uuid.uuid4())</arg>
+<arg>modules=uuid</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2026-06-14T23:28:02.640787" elapsed="0.001367"/>
+</kw>
+<if>
+<branch type="IF" condition="'${tipo}' == 'ORIGEM'">
+<kw name="Set Suite Variable" owner="BuiltIn">
+<arg>${EMAIL_ORIGEM}</arg>
+<arg>origem_${uuid}@bugbank.com</arg>
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<status status="NOT RUN" start="2026-06-14T23:28:02.643419" elapsed="0.000200"/>
+</kw>
+<kw name="Set Suite Variable" owner="BuiltIn">
+<arg>${NOME_ORIGEM}</arg>
+<arg>Reginaldo QA</arg>
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<status status="NOT RUN" start="2026-06-14T23:28:02.643949" elapsed="0.000188"/>
+</kw>
+<kw name="Set Suite Variable" owner="BuiltIn">
+<arg>${SENHA_ORIGEM}</arg>
+<arg>123456</arg>
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<status status="NOT RUN" start="2026-06-14T23:28:02.644536" elapsed="0.000238"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Usuario origem criado: ${EMAIL_ORIGEM}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2026-06-14T23:28:02.645069" elapsed="0.000184"/>
+</kw>
+<status status="NOT RUN" start="2026-06-14T23:28:02.642555" elapsed="0.002918"/>
+</branch>
+<branch type="ELSE">
+<kw name="Set Suite Variable" owner="BuiltIn">
+<msg time="2026-06-14T23:28:02.649091" level="INFO">${EMAIL_DESTINO} = destino_10416425-b8f9-420d-a7a5-27937ea21cbd@bugbank.com</msg>
+<arg>${EMAIL_DESTINO}</arg>
+<arg>destino_${uuid}@bugbank.com</arg>
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<status status="PASS" start="2026-06-14T23:28:02.646290" elapsed="0.002911"/>
+</kw>
+<kw name="Set Suite Variable" owner="BuiltIn">
+<msg time="2026-06-14T23:28:02.652026" level="INFO">${NOME_DESTINO} = Receptor da Silva</msg>
+<arg>${NOME_DESTINO}</arg>
+<arg>Receptor da Silva</arg>
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<status status="PASS" start="2026-06-14T23:28:02.649478" elapsed="0.002678"/>
+</kw>
+<kw name="Set Suite Variable" owner="BuiltIn">
+<msg time="2026-06-14T23:28:02.654657" level="INFO">${SENHA_DESTINO} = 123456</msg>
+<arg>${SENHA_DESTINO}</arg>
+<arg>123456</arg>
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<status status="PASS" start="2026-06-14T23:28:02.652573" elapsed="0.002179"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Usuario destino criado: ${EMAIL_DESTINO}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-06-14T23:28:02.655045" elapsed="0.000861"/>
+</kw>
+<status status="PASS" start="2026-06-14T23:28:02.645688" elapsed="0.010387"/>
+</branch>
+<status status="PASS" start="2026-06-14T23:28:02.642495" elapsed="0.013685"/>
+</if>
+<arg>DESTINO</arg>
+<status status="PASS" start="2026-06-14T23:28:02.640264" elapsed="0.016074"/>
+</kw>
+<kw name="Realizar Cadastro" owner="register">
+<kw name="Click" owner="Browser">
+<msg time="2026-06-14T23:28:02.658564" level="INFO">Clicks the element 'text=Registrar'.</msg>
+<arg>text=Registrar</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2026-06-14T23:28:02.657797" elapsed="0.055218"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2026-06-14T23:28:02.714123" level="INFO">Fills the text 'Receptor da Silva' in the given field.</msg>
+<arg>${INPUT_NOME}</arg>
+<arg>${nome}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2026-06-14T23:28:02.713256" elapsed="0.012682"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2026-06-14T23:28:02.727411" level="INFO">Fills the text 'destino_10416425-b8f9-420d-a7a5-27937ea21cbd@bugbank.com' in the given field.</msg>
+<arg>${INPUT_EMAIL}</arg>
+<arg>${email}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2026-06-14T23:28:02.726299" elapsed="0.014629"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2026-06-14T23:28:02.742679" level="INFO">Fills the text '123456' in the given field.</msg>
+<arg>${INPUT_SENHA}</arg>
+<arg>${senha}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2026-06-14T23:28:02.741236" elapsed="0.014447"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2026-06-14T23:28:02.756530" level="INFO">Fills the text '123456' in the given field.</msg>
+<arg>${INPUT_CONFIRMAR}</arg>
+<arg>${senha}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2026-06-14T23:28:02.755932" elapsed="0.009405"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2026-06-14T23:28:02.766017" level="INFO">Clicks the element 'id=toggleAddBalance'.</msg>
+<arg>id=toggleAddBalance</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2026-06-14T23:28:02.765532" elapsed="1.402201"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2026-06-14T23:28:04.168652" level="INFO">Clicks the element 'text=Cadastrar'.</msg>
+<arg>text=Cadastrar</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2026-06-14T23:28:04.168017" elapsed="0.036574"/>
+</kw>
+<arg>${NOME_DESTINO}</arg>
+<arg>${EMAIL_DESTINO}</arg>
+<arg>${SENHA_DESTINO}</arg>
+<status status="PASS" start="2026-06-14T23:28:02.656956" elapsed="1.547828"/>
+</kw>
+<kw name="Validar Cadastro Com Sucesso" owner="register">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2026-06-14T23:28:04.212171" level="INFO">Waited for Element with selector id=modalText at state visible</msg>
+<arg>id=modalText</arg>
+<arg>visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2026-06-14T23:28:04.206160" elapsed="0.006230"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2026-06-14T23:28:04.224825" level="INFO">Text: ['A conta 565-7 foi criada com sucesso']</msg>
+<msg time="2026-06-14T23:28:04.224974" level="INFO">${mensagem} = A conta 565-7 foi criada com sucesso</msg>
+<var>${mensagem}</var>
+<arg>id=modalText</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2026-06-14T23:28:04.212656" elapsed="0.012362"/>
+</kw>
+<kw name="Should Contain" owner="BuiltIn">
+<arg>${mensagem}</arg>
+<arg>foi criada com sucesso</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" start="2026-06-14T23:28:04.225188" elapsed="0.000481"/>
+</kw>
+<status status="PASS" start="2026-06-14T23:28:04.205439" elapsed="0.020336"/>
+</kw>
+<kw name="Capturar Conta" owner="register">
+<kw name="Get Text" owner="Browser">
+<msg time="2026-06-14T23:28:04.238812" level="INFO">Text: ['A conta 565-7 foi criada com sucesso']</msg>
+<msg time="2026-06-14T23:28:04.239007" level="INFO">${mensagem} = A conta 565-7 foi criada com sucesso</msg>
+<var>${mensagem}</var>
+<arg>id=modalText</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2026-06-14T23:28:04.226664" elapsed="0.012393"/>
+</kw>
+<kw name="Get Regexp Matches" owner="String">
+<msg time="2026-06-14T23:28:04.239812" level="INFO">${matches} = ['565-7']</msg>
+<var>${matches}</var>
+<arg>${mensagem}</arg>
+<arg>[0-9]+-[0-9]+</arg>
+<doc>Returns a list of all non-overlapping matches in the given string.</doc>
+<status status="PASS" start="2026-06-14T23:28:04.239324" elapsed="0.000540"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Matches encontrados: ${matches}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-06-14T23:28:04.240078" elapsed="0.000670"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2026-06-14T23:28:04.241590" level="INFO">${conta} = 565-7</msg>
+<var>${conta}</var>
+<arg>${matches}[0]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2026-06-14T23:28:04.240988" elapsed="0.000677"/>
+</kw>
+<if>
+<branch type="IF" condition="'${tipo}' == 'ORIGEM'">
+<kw name="Set Suite Variable" owner="BuiltIn">
+<arg>${CONTA_ORIGEM}</arg>
+<arg>${conta}</arg>
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<status status="NOT RUN" start="2026-06-14T23:28:04.242366" elapsed="0.000149"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Conta origem criada: ${CONTA_ORIGEM}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2026-06-14T23:28:04.242746" elapsed="0.000161"/>
+</kw>
+<status status="NOT RUN" start="2026-06-14T23:28:04.241854" elapsed="0.001198"/>
+</branch>
+<branch type="ELSE">
+<kw name="Set Suite Variable" owner="BuiltIn">
+<msg time="2026-06-14T23:28:04.246169" level="INFO">${CONTA_DESTINO} = 565-7</msg>
+<arg>${CONTA_DESTINO}</arg>
+<arg>${conta}</arg>
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<status status="PASS" start="2026-06-14T23:28:04.243492" elapsed="0.002776"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Conta destino criada: ${CONTA_DESTINO}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-06-14T23:28:04.246537" elapsed="0.000675"/>
+</kw>
+<status status="PASS" start="2026-06-14T23:28:04.243138" elapsed="0.004169"/>
+</branch>
+<status status="PASS" start="2026-06-14T23:28:04.241814" elapsed="0.005565"/>
+</if>
+<arg>DESTINO</arg>
+<status status="PASS" start="2026-06-14T23:28:04.226269" elapsed="0.021198"/>
+</kw>
+<kw name="Separar Conta E Digito" owner="register">
+<if>
+<branch type="IF" condition="'${tipo}' == 'ORIGEM'">
+<kw name="Set Variable" owner="BuiltIn">
+<var>${conta}</var>
+<arg>${CONTA_ORIGEM}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" start="2026-06-14T23:28:04.248882" elapsed="0.000132"/>
+</kw>
+<status status="NOT RUN" start="2026-06-14T23:28:04.248492" elapsed="0.000615"/>
+</branch>
+<branch type="ELSE">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2026-06-14T23:28:04.249973" level="INFO">${conta} = 565-7</msg>
+<var>${conta}</var>
+<arg>${CONTA_DESTINO}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2026-06-14T23:28:04.249437" elapsed="0.000588"/>
+</kw>
+<status status="PASS" start="2026-06-14T23:28:04.249181" elapsed="0.000928"/>
+</branch>
+<status status="PASS" start="2026-06-14T23:28:04.248461" elapsed="0.001715"/>
+</if>
+<kw name="Split String" owner="String">
+<msg time="2026-06-14T23:28:04.250750" level="INFO">${partes} = ['565', '7']</msg>
+<var>${partes}</var>
+<arg>${conta}</arg>
+<arg>-</arg>
+<doc>Splits the ``string`` using ``separator`` as a delimiter string.</doc>
+<status status="PASS" start="2026-06-14T23:28:04.250350" elapsed="0.000452"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2026-06-14T23:28:04.251572" level="INFO">${numero} = 565</msg>
+<var>${numero}</var>
+<arg>${partes}[0]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2026-06-14T23:28:04.251014" elapsed="0.000616"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2026-06-14T23:28:04.252585" level="INFO">${digito} = 7</msg>
+<var>${digito}</var>
+<arg>${partes}[1]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2026-06-14T23:28:04.251873" elapsed="0.000774"/>
+</kw>
+<if>
+<branch type="IF" condition="'${tipo}' == 'ORIGEM'">
+<kw name="Set Suite Variable" owner="BuiltIn">
+<arg>${NUMERO_CONTA_ORIGEM}</arg>
+<arg>${numero}</arg>
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<status status="NOT RUN" start="2026-06-14T23:28:04.253376" elapsed="0.000121"/>
+</kw>
+<kw name="Set Suite Variable" owner="BuiltIn">
+<arg>${DIGITO_CONTA_ORIGEM}</arg>
+<arg>${digito}</arg>
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<status status="NOT RUN" start="2026-06-14T23:28:04.253656" elapsed="0.000099"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Conta Origem: ${NUMERO_CONTA_ORIGEM}-${DIGITO_CONTA_ORIGEM}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2026-06-14T23:28:04.253876" elapsed="0.000084"/>
+</kw>
+<status status="NOT RUN" start="2026-06-14T23:28:04.252894" elapsed="0.001115"/>
+</branch>
+<branch type="ELSE">
+<kw name="Set Suite Variable" owner="BuiltIn">
+<msg time="2026-06-14T23:28:04.256152" level="INFO">${NUMERO_CONTA_DESTINO} = 565</msg>
+<arg>${NUMERO_CONTA_DESTINO}</arg>
+<arg>${numero}</arg>
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<status status="PASS" start="2026-06-14T23:28:04.254217" elapsed="0.002055"/>
+</kw>
+<kw name="Set Suite Variable" owner="BuiltIn">
+<msg time="2026-06-14T23:28:04.258963" level="INFO">${DIGITO_CONTA_DESTINO} = 7</msg>
+<arg>${DIGITO_CONTA_DESTINO}</arg>
+<arg>${digito}</arg>
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<status status="PASS" start="2026-06-14T23:28:04.256593" elapsed="0.002468"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Conta Destino: ${NUMERO_CONTA_DESTINO}-${DIGITO_CONTA_DESTINO}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-06-14T23:28:04.259291" elapsed="0.000687"/>
+</kw>
+<status status="PASS" start="2026-06-14T23:28:04.254054" elapsed="0.005987"/>
+</branch>
+<status status="PASS" start="2026-06-14T23:28:04.252780" elapsed="0.007302"/>
+</if>
+<arg>DESTINO</arg>
+<status status="PASS" start="2026-06-14T23:28:04.248048" elapsed="0.012086"/>
+</kw>
+<kw name="Fechar Modal Cadastro" owner="register">
+<kw name="Click" owner="Browser">
+<msg time="2026-06-14T23:28:04.261099" level="INFO">Clicks the element 'id=btnCloseModal'.</msg>
+<arg>id=btnCloseModal</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2026-06-14T23:28:04.260690" elapsed="0.867237"/>
+</kw>
+<status status="PASS" start="2026-06-14T23:28:04.260387" elapsed="0.867764"/>
+</kw>
+<kw name="Realizar Login" owner="login">
+<kw name="Fill Text" owner="Browser">
+<msg time="2026-06-14T23:28:05.130704" level="INFO">Fills the text 'origem_daca6276-1f68-48fc-ad6d-fa132192f3d0@bugbank.com' in the given field.</msg>
+<arg>${INPUT_EMAIL_LOGIN}</arg>
+<arg>${email}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2026-06-14T23:28:05.129747" elapsed="0.011586"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2026-06-14T23:28:05.142396" level="INFO">Fills the text '123456' in the given field.</msg>
+<arg>${INPUT_SENHA_LOGIN}</arg>
+<arg>${senha}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2026-06-14T23:28:05.141603" elapsed="0.014344"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2026-06-14T23:28:05.156786" level="INFO">Clicks the element 'text=Acessar'.</msg>
+<arg>${BTN_ACESSAR}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2026-06-14T23:28:05.156164" elapsed="0.058243"/>
+</kw>
+<arg>${EMAIL_ORIGEM}</arg>
+<arg>${SENHA_ORIGEM}</arg>
+<status status="PASS" start="2026-06-14T23:28:05.128874" elapsed="0.085675"/>
+</kw>
+<kw name="Acessar Tela Transferencia" owner="transfer">
+<kw name="Click" owner="Browser">
+<msg time="2026-06-14T23:28:05.215770" level="INFO">Clicks the element 'id=btn-TRANSFERÊNCIA'.</msg>
+<arg>${BTN_MENU_TRANSFERENCIA}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2026-06-14T23:28:05.215313" elapsed="0.127583"/>
+</kw>
+<status status="PASS" start="2026-06-14T23:28:05.214907" elapsed="0.128250"/>
+</kw>
+<kw name="Preencher Dados Transferencia" owner="transfer">
+<kw name="Fill Text" owner="Browser">
+<msg time="2026-06-14T23:28:05.345644" level="INFO">Fills the text '565' in the given field.</msg>
+<arg>${INPUT_CONTA}</arg>
+<arg>${conta}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2026-06-14T23:28:05.344810" elapsed="0.039941"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2026-06-14T23:28:05.385997" level="INFO">Fills the text '7' in the given field.</msg>
+<arg>${INPUT_DIGITO}</arg>
+<arg>${digito}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2026-06-14T23:28:05.385036" elapsed="0.013913"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2026-06-14T23:28:05.400084" level="INFO">Fills the text '100' in the given field.</msg>
+<arg>${INPUT_VALOR}</arg>
+<arg>${valor}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2026-06-14T23:28:05.399230" elapsed="0.012774"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2026-06-14T23:28:05.414044" level="INFO">Fills the text 'Transferencia automatizada' in the given field.</msg>
+<arg>${INPUT_DESCRICAO}</arg>
+<arg>${descricao}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2026-06-14T23:28:05.412557" elapsed="0.012539"/>
+</kw>
+<arg>${NUMERO_CONTA_DESTINO}</arg>
+<arg>${DIGITO_CONTA_DESTINO}</arg>
+<arg>100</arg>
+<arg>Transferencia automatizada</arg>
+<status status="PASS" start="2026-06-14T23:28:05.343671" elapsed="0.081661"/>
+</kw>
+<kw name="Confirmar Transferencia" owner="transfer">
+<kw name="Click" owner="Browser">
+<msg time="2026-06-14T23:28:05.427253" level="INFO">Clicks the element 'text=Transferir agora'.</msg>
+<arg>${BTN_TRANSFERIR}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2026-06-14T23:28:05.426471" elapsed="0.066730"/>
+</kw>
+<status status="PASS" start="2026-06-14T23:28:05.425846" elapsed="0.067619"/>
+</kw>
+<kw name="Validar Transferencia Com Sucesso" owner="transfer">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2026-06-14T23:28:05.504365" level="INFO">Waited for Element with selector text=Transferencia realizada com sucesso at state visible</msg>
+<arg>${MODAL_SUCESSO}</arg>
+<arg>visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2026-06-14T23:28:05.495291" elapsed="0.009256"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2026-06-14T23:28:05.518568" level="INFO">Text: ['Transferencia realizada com sucesso']</msg>
+<msg time="2026-06-14T23:28:05.518752" level="INFO">${mensagem} = Transferencia realizada com sucesso</msg>
+<var>${mensagem}</var>
+<arg>${MODAL_SUCESSO}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2026-06-14T23:28:05.504812" elapsed="0.013979"/>
+</kw>
+<kw name="Should Contain" owner="BuiltIn">
+<arg>${mensagem}</arg>
+<arg>sucesso</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" start="2026-06-14T23:28:05.519040" elapsed="0.000526"/>
+</kw>
+<status status="PASS" start="2026-06-14T23:28:05.494451" elapsed="0.025210"/>
+</kw>
+<kw name="Fechar Modal Transferencia" owner="transfer">
+<kw name="Click" owner="Browser">
+<msg time="2026-06-14T23:28:05.520830" level="INFO">Clicks the element 'id=btnCloseModal'.</msg>
+<arg>${BTN_FECHAR_MODAL}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2026-06-14T23:28:05.520359" elapsed="0.878645"/>
+</kw>
+<status status="PASS" start="2026-06-14T23:28:05.519979" elapsed="0.879155"/>
+</kw>
+<msg time="2026-06-14T23:28:06.410657" level="INFO">Switching context to context=ca8a671d-5467-44ba-b03c-9d05be8cf711 in CURRENT</msg>
+<msg time="2026-06-14T23:28:06.415742" level="INFO">Successfully changed active context: context=ca8a671d-5467-44ba-b03c-9d05be8cf711</msg>
+<msg time="2026-06-14T23:28:06.429973" level="INFO">Successfully closed Context</msg>
+<status status="PASS" start="2026-06-14T23:27:57.832208" elapsed="8.567205"/>
+</test>
+<status status="PASS" start="2026-06-14T23:27:57.477110" elapsed="8.955728"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Transfer" id="s1" pass="1" fail="0" skip="0">Transfer</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
