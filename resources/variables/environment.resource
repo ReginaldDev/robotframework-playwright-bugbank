@@ -1,4 +1,5 @@
 *** Variables ***
 
 ${BASE_URL}     https://bugbank.netlify.app
+${HEADLESS}     True
 

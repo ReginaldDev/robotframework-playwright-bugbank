@@ -10,7 +10,7 @@ Resource    ../data/users.resource
 
 Abrir BugBank
 
-    New Browser    chromium    headless=False
+    New Browser    chromium    headless=${HEADLESS}
 
     New Context
 

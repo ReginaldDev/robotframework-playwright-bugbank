@@ -33,7 +33,7 @@ jobs:
 
       - name: Run Tests
         run: |
-          robot -d results tests/
+          robot -v HEADLESS:True -d results tests/
 
       - name: Upload Reports
         uses: actions/upload-artifact@v4
